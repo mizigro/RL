@@ -25,4 +25,4 @@ Simple 1D game, Objective : reach from one end to the other end
  
  ^ - - - 0 T
  
- ^ - - - - *
+ ^ - - - -  *
