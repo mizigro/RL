@@ -1,6 +1,6 @@
-## Reinforcement Learning (Practice) 
+# Reinforcement Learning (Practice) 
 
-### Q Learning Test
+## Simple Q Learning Test
 
 Simple 1D game, Objective : reach from one end to the other end
 
