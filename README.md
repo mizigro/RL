@@ -1,4 +1,4 @@
-# Reinforcement Learning (Practice) 
+# Reinforcement Learning  
 
 ### Simple Q Learning Test
 
