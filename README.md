@@ -2,7 +2,7 @@
 
 ### Simple Q Learning Test
 
-Simple 1D game, Objective : reach from one end to the other end
+Simple 1D game having a starting point and an ending point separated by 5 steps. Objective : reach from one end to the other end
 
 ### Open AI Gym (Cartpole environment)
 
