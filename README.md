@@ -1,28 +1,9 @@
 # Reinforcement Learning (Practice) 
 
-## Simple Q Learning Test
+### Simple Q Learning Test
 
 Simple 1D game, Objective : reach from one end to the other end
 
-#### Final Policy Table
+### Open AI Gym (Cartpole environment)
 
-| State | Left  | Right |
-| -------| ------------- | ------------- |
-| 0 | 0.  | 1.  |
-| 1 | 1.  | 1.  |
-| 2 | 1.  | 1.  |
-| 3 | 1.  | 1.  |
-| 4 | 1.  | 1.  |
-| 5 | 0.  | 0.  |
-
-#### Win Sequence
-
- ^ 0 - - - T
- 
- ^ - 0 - - T
- 
- ^ - - 0 - T
- 
- ^ - - - 0 T
- 
- ^ - - - -  *
+An attempt to solve the cartpole problem simply using the bellman equation for Q Learning. After about 1000 iterations, the algorithm is seen to last around 200 time steps on an average.
