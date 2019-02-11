@@ -7,7 +7,7 @@ from agent import Agent
 env = gym.make('CartPole-v1')
 
 agent = Agent(env)
-eps = 5000
+eps = 10000
 tests = 10
 
 rs = []
@@ -48,6 +48,9 @@ for ep in range(eps):
             agent.updatePolicy(s, s_, action, reward)
             s = s_
 
-plt.plot(rs)
-plt.show()
+
+plt.xlabel('Iterations')
+plt.ylabel('Time Steps Lasted')
+plt.plot([i for i in range(5000,10000,20)],rs[5000::20],linewidth = 0.5)
+plt.savefig('performance.jpg')
 env.close()
