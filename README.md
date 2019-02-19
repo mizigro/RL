@@ -11,4 +11,4 @@ An attempt to solve the cartpole problem simply using the bellman equation for Q
 
 ### DQN - Open AI Gym (Cartpole environment)
 
-Solving OpenAI Gym CartPole Problem using a Deep Q Network with 2 layers and ReLU activations. The network reached an average of 300+ time steps easily under 3,000 episodes.
+Solving OpenAI Gym CartPole Problem using a Deep Q Network with 2 layers and ReLU activations. The network can reach an average of 300+ time steps under 3,000 episodes.
