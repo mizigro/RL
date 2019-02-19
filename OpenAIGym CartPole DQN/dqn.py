@@ -1,5 +1,6 @@
 from keras.layers import Dense
 from keras.models import Sequential
+from keras.optimizers import SGD
 import random
 import numpy as np
 
@@ -8,6 +9,7 @@ class DQN:
     def __init__(self, in_dim, out_dim):
         self.setupModel(in_dim, out_dim)
         self.gamma = 0.8
+        self.modelSavePath = 'Trained Models/300.h5'
 
         self.data = []
         self.memoryLimit = 8192
@@ -19,6 +21,8 @@ class DQN:
         self.Q.add(Dense(units = 16, activation = 'relu', input_dim = in_dim))
         self.Q.add(Dense(units = 8, activation = 'relu', input_dim = in_dim))
         self.Q.add(Dense(units = out_dim))
+
+        sgd = SGD(lr=0.001)
 
         self.Q.compile(loss='mse',optimizer = 'sgd', metrics = ['accuracy'])
     
@@ -56,3 +60,6 @@ class DQN:
         else:
             q = self.Q.predict(np.array([s]))[0]
             return np.argmax(q)
+
+    def saveModel(self):
+        self.Q.save(self.modelSavePath)
