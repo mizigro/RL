@@ -12,7 +12,7 @@ class testAgent():
 
 if __name__=="__main__":
     env = gym.make('CartPole-v1')
-    agent = testAgent(modelPath = 'Trained Models/300.h5')
+    agent = testAgent(modelPath = 'Trained Models/450.h5')
 
     episodes = 10000
 
